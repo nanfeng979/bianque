@@ -19,6 +19,12 @@ public class cardController : MonoBehaviour
     // 时长跟Card动画时长相关
     private const float animationDuration = 1.0f;
 
+    private float AnimateToBackTimer = 1.0f;
+    private float AnimateToBackTime = 0.0f;
+    private float AnimateToFrontTimer = 1.0f;
+    private float AnimateToFrontTime = 1.0f;
+
+
     void Start()
     {
         image = GetComponent<Image>();
@@ -47,16 +53,16 @@ public class cardController : MonoBehaviour
 
     public void PlanFirstClick() {
         cardManager.instance.SetCurrentCard(this);
-        imageToFront();
+        AnimateToFront();
     }
 
     public void SameNameButIndex() {
         StartCoroutine(DestroyTwoCardByWait(animationDuration + 0.5f));
         ResetCurrentCard();
-        imageToFront();
+        AnimateToFront();
     }
     public void DifferentNameAndIndex() {
-        imageToFront();
+        AnimateToFront();
         StartCoroutine(ResetTwoCardByWait(animationDuration));
         ResetCurrentCard();
     }
@@ -69,7 +75,7 @@ public class cardController : MonoBehaviour
 
     IEnumerator ResetTwoCardByWait(float waitTime) {
         yield return new WaitForSeconds(waitTime);
-        imageToBack();
+        AnimateToBack();
         currentCard.GetComponent<Animator>().SetInteger("CardStatus", 1);
     }
 
@@ -77,12 +83,22 @@ public class cardController : MonoBehaviour
         cardManager.instance.init();
     }
 
-    private void imageToBack() {
+    private void AnimateToBack() {
         animator.SetInteger("CardStatus", 1);
     }
 
-    private void imageToFront() {
+    public void ImageToBack() {
+        image.sprite = back;
+        Debug.Log("ImageToBack");
+    }
+
+    private void AnimateToFront() {
         animator.SetInteger("CardStatus", 2);
+    }
+
+    public void ImageToFront() {
+        image.sprite = front;
+        Debug.Log("ImageToFront");
     }
 
 }
