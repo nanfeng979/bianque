@@ -12,8 +12,12 @@ public class ChineseMedicineIllustrated : MonoBehaviour
         instance = this;
     }
 
-    public void AddData(ChineseMedicineIllustratedData medicine)
+    public void AddMedicine(ChineseMedicineIllustratedData medicine)
     {
+        if(GetMedicine(medicine.Name) != null) {
+            Debug.Log("exists");
+            return ;
+        }
         medicinesList.Add(medicine);
     }
 

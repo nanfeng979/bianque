@@ -15,12 +15,10 @@ public class test : MonoBehaviour
 
     private void ChineseMedicineIllustratedTest() {
         if(Input.GetKeyDown(KeyCode.Z)) {
-            Debug.Log(ChineseMedicineIllustrated.instance.GetMedicine("金银花").Name + ": " + 
-            ChineseMedicineIllustrated.instance.GetMedicine("金银花").Description);
-            Debug.Log(ChineseMedicineIllustrated.instance.GetMedicine("远志").Name + ": " + 
-            ChineseMedicineIllustrated.instance.GetMedicine("远志").Description);
-            Debug.Log(ChineseMedicineIllustrated.instance.GetMedicine("猫爪草").Name + ": " + 
-            ChineseMedicineIllustrated.instance.GetMedicine("猫爪草").Description);
+            List<ChineseMedicineIllustratedData> medicines = ChineseMedicineIllustrated.instance.medicinesList;
+            for(int i = 0; i < medicines.Count; i++) {
+                Debug.Log(medicines[i].Name + "_" + medicines[i].Description + "_" + medicines[i].Sprite);
+            }
         }
     }
 

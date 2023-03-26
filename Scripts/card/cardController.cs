@@ -53,12 +53,17 @@ public class cardController : MonoBehaviour
     public void SameNameButIndex() {
         StartCoroutine(DestroyTwoCardByWait(animationDuration + 0.5f));
         ResetCurrentCard();
+        AddToIllustarted(new ChineseMedicineIllustratedData(cardName, "testDes", "testSpr"));
         AnimateToFront();
     }
     public void DifferentNameAndIndex() {
         StartCoroutine(ResetTwoCardByWait(animationDuration));
         ResetCurrentCard();
         AnimateToFront();
+    }
+
+    private void AddToIllustarted(ChineseMedicineIllustratedData medicine) {
+        ChineseMedicineIllustrated.instance.AddMedicine(medicine);
     }
 
     IEnumerator DestroyTwoCardByWait(float waitTime) {

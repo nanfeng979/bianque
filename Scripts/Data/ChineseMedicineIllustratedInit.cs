@@ -20,7 +20,7 @@ public class ChineseMedicineIllustratedInit : MonoBehaviour
         medicines.Add(new ChineseMedicineIllustratedData("猫爪草", "猫爪草具有化痰散结、解毒消肿的功效", "猫爪草.png"));
 
         for(int i = 0; i < medicines.Count; i++) {
-            ChineseMedicineIllustrated.instance.AddData(medicines[i]);
+            ChineseMedicineIllustrated.instance.AddMedicine(medicines[i]);
         }
     }
 }
