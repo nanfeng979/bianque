@@ -52,6 +52,7 @@ public class cardController : MonoBehaviour
 
     public void SameNameButIndex() {
         StartCoroutine(DestroyTwoCardByWait(animationDuration + 0.5f));
+        StartCoroutine(OnClickCardPlayPlanByWait(animationDuration + 1.0f));
         ResetCurrentCard();
         AddToIllustarted(new ChineseMedicineIllustratedData(cardName, "testDes", "testSpr"));
         AnimateToFront();
@@ -70,13 +71,17 @@ public class cardController : MonoBehaviour
         yield return new WaitForSeconds(waitTime);
         Destroy(gameObject);
         Destroy(currentCard.gameObject);
-        OnClickCardPlayPlan();
     }
 
     IEnumerator ResetTwoCardByWait(float waitTime) {
         yield return new WaitForSeconds(waitTime);
         currentCard.GetComponent<Animator>().SetInteger("CardStatus", 1);
         AnimateToBack();
+    }
+
+    IEnumerator OnClickCardPlayPlanByWait(float waitTime) {
+        yield return new WaitForSeconds(waitTime);
+        OnClickCardPlayPlan();
     }
 
     private void ResetCurrentCard() {
