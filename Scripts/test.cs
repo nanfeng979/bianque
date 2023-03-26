@@ -4,21 +4,24 @@ using UnityEngine;
 using UnityEngine.UI;
 public class test : MonoBehaviour
 {
-    public Sprite spr;
-    // Start is called before the first frame update
     void Start()
     {
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        ChineseMedicineIllustratedTest();
     }
 
-    public void SetSprite() {
-        GetComponent<Image>().sprite = spr;
-        Debug.Log("test");
+    private void ChineseMedicineIllustratedTest() {
+        if(Input.GetKeyDown(KeyCode.Z)) {
+            Debug.Log(ChineseMedicineIllustrated.instance.GetMedicine("金银花").Name + ": " + 
+            ChineseMedicineIllustrated.instance.GetMedicine("金银花").Description);
+            Debug.Log(ChineseMedicineIllustrated.instance.GetMedicine("远志").Name + ": " + 
+            ChineseMedicineIllustrated.instance.GetMedicine("远志").Description);
+            Debug.Log(ChineseMedicineIllustrated.instance.GetMedicine("猫爪草").Name + ": " + 
+            ChineseMedicineIllustrated.instance.GetMedicine("猫爪草").Description);
+        }
     }
 
     public void myTest() {
