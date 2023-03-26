@@ -91,6 +91,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60e4955ea0bab5243b3fdc6b12b3629b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cardPlayPlan: {fileID: 2525364055106120438}
   cardIndex: 0
   cardName: 
   front: {fileID: 21300000, guid: 3104492e408baeb48918c0bf5524030c, type: 3}

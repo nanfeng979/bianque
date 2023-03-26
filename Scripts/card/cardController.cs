@@ -42,7 +42,7 @@ public class cardController : MonoBehaviour
             }
         }
 
-        cardManager.instance.Click();
+        OnClick();
     }
 
     public void PlanFirstClick() {
@@ -70,6 +70,7 @@ public class cardController : MonoBehaviour
         yield return new WaitForSeconds(waitTime);
         Destroy(gameObject);
         Destroy(currentCard.gameObject);
+        OnClickCardPlayPlan();
     }
 
     IEnumerator ResetTwoCardByWait(float waitTime) {
@@ -96,6 +97,14 @@ public class cardController : MonoBehaviour
 
     public void ImageToFront() {
         image.sprite = front;
+    }
+
+    private void OnClick() {
+        cardManager.instance.Click();
+    }
+
+    private void OnClickCardPlayPlan() {
+        carPlayPlan.instance.OnClick();
     }
 
 }

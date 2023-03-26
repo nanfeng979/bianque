@@ -11407,6 +11407,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cards: {fileID: 243267798581087091, guid: 72169424e5c0c42428de56891c065154, type: 3}
+  cardFrame: {fileID: 762494737}
 --- !u!1 &1571943435
 GameObject:
   m_ObjectHideFlags: 0
