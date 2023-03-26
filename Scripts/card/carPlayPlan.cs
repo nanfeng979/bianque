@@ -30,23 +30,23 @@ public class carPlayPlan : MonoBehaviour
 
     public void OnClick() {
         
-        if(IsCardsOnlyTwoChild()) {
+        if(IsFinalGroupByCardsChild()) {
             StartCoroutine(ResetCheckChildCount());
         }
     }
 
     IEnumerator ResetCheckChildCount() {
         yield return new WaitForSeconds(1.0f);
-        if(IsCardsNoChild()) {
+        if(IsNoChildByCards()) {
             cardFrame.exitCardFrame();
         }
     }
 
-    private bool IsCardsOnlyTwoChild() {
+    private bool IsFinalGroupByCardsChild() {
         return child.transform.childCount == 2;
     }
 
-    private bool IsCardsNoChild() {
+    private bool IsNoChildByCards() {
         return child.transform.childCount == 0;
     }
 
