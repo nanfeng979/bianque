@@ -29,7 +29,6 @@ public class carPlayPlan : MonoBehaviour
     }
 
     public void OnClick() {
-        
         if(IsFinalGroupByCardsChild()) {
             StartCoroutine(ResetCheckChildCount());
         }
@@ -43,7 +42,7 @@ public class carPlayPlan : MonoBehaviour
     }
 
     private bool IsFinalGroupByCardsChild() {
-        return child.transform.childCount == 2;
+        return child.transform.childCount <= 2;
     }
 
     private bool IsNoChildByCards() {

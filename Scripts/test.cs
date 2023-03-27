@@ -10,15 +10,22 @@ public class test : MonoBehaviour
 
     void Update()
     {
-        ChineseMedicineIllustratedTest();
+        if(Input.GetKeyDown(KeyCode.Z)) {
+            TaskDataListTest();
+        }
     }
 
     private void ChineseMedicineIllustratedTest() {
-        if(Input.GetKeyDown(KeyCode.Z)) {
-            List<ChineseMedicineIllustratedData> medicines = ChineseMedicineIllustrated.instance.medicinesList;
-            for(int i = 0; i < medicines.Count; i++) {
-                Debug.Log(medicines[i].Name + "_" + medicines[i].Description + "_" + medicines[i].Sprite);
-            }
+        List<ChineseMedicineIllustratedData> medicines = ChineseMedicineIllustrated.instance.medicinesList;
+        for(int i = 0; i < medicines.Count; i++) {
+            Debug.Log(medicines[i].Name + "_" + medicines[i].Description + "_" + medicines[i].Sprite);
+        }
+    }
+
+    private void TaskDataListTest() {
+        List<TaskClass> taskList = TaskDataList.instance.taskList;
+        for(int i = 0; i < taskList.Count; i++) {
+            Debug.Log(taskList[i].taskId + "_" + taskList[i].taskType + "_" + taskList[i].taskName + "_" + taskList[i].taskDesc + "_" + taskList[i].taskIcon);
         }
     }
 

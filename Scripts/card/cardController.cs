@@ -52,7 +52,7 @@ public class cardController : MonoBehaviour
 
     public void SameNameButIndex() {
         StartCoroutine(DestroyTwoCardByWait(animationDuration + 0.5f));
-        StartCoroutine(OnClickCardPlayPlanByWait(animationDuration + 1.0f));
+        StartCoroutine(OnClickCardPlayPlanByWait(animationDuration + 0.5f));
         ResetCurrentCard();
         AddToIllustarted(new ChineseMedicineIllustratedData(cardName, "testDes", "testSpr"));
         AnimateToFront();
