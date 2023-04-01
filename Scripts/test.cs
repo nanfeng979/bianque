@@ -11,7 +11,7 @@ public class test : MonoBehaviour
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Z)) {
-            TaskDataListTest();
+            ChineseMedicineIllustratedTest();
         }
     }
 

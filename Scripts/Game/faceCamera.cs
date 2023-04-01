@@ -8,20 +8,32 @@ public class faceCamera : MonoBehaviour
     
     // GameObject列表
     public List<GameObject> faceCamerasList = new List<GameObject>();
-    // Start is called before the first frame update
+    public List<GameObject> faceCamerasListHaveChilds = new List<GameObject>();
+
     void Start()
     {
         instance = this;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        for(int i = 0; i < faceCamerasList.Count; i++)
-        {
+        SetCameraByFaceCamerasList();
+        SetCameraByFaceCamerasListHaveChilds();
+
+    }
+
+    private void SetCameraByFaceCamerasList() {
+        for(int i = 0; i < faceCamerasList.Count; i++) {
             faceCamerasList[i].transform.rotation = Camera.main.transform.rotation;
         }
+    }
 
+    private void SetCameraByFaceCamerasListHaveChilds() {
+        for(int i = 0; i < faceCamerasListHaveChilds.Count; i++) {
+            for(int j = 0; j < faceCamerasListHaveChilds[i].transform.childCount; j++) {
+                faceCamerasListHaveChilds[i].transform.GetChild(j).rotation = Camera.main.transform.rotation;
+            }
+        }
     }
 
     public void add(GameObject obj) {
