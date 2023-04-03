@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour
 
     private Animator anim;
     private Rigidbody2D rig;
+    private bool isdown;
+    public GameObject MyBag;
 
     void Start()
     {
@@ -45,6 +47,12 @@ public class PlayerController : MonoBehaviour
         anim.SetFloat("InputY", inputY);
 
         // transform.rotation = Camera.main.transform.rotation;
+        if(Input.GetKeyDown(KeyCode.B))
+        {   
+            isdown = !isdown;
+            MyBag.SetActive(isdown);
+            InventoryManager.RefreshItem();
+        }
     }
     
 }
