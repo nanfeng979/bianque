@@ -6,14 +6,13 @@ public class PlayerController : MonoBehaviour
 {
     public float speed = 3.0f;
 
+    public GameObject MyBag;
+
     private float inputX;
     private float inputY;
     private Vector2 direction;
-
     private Animator anim;
     private Rigidbody2D rig;
-    private bool isdown;
-    public GameObject MyBag;
 
     void Start()
     {
@@ -46,13 +45,17 @@ public class PlayerController : MonoBehaviour
         anim.SetFloat("InputX", inputX);
         anim.SetFloat("InputY", inputY);
 
-        // transform.rotation = Camera.main.transform.rotation;
         if(Input.GetKeyDown(KeyCode.B))
         {   
-            isdown = !isdown;
-            MyBag.SetActive(isdown);
-            InventoryManager.RefreshItem();
+            if(!MyBag.activeSelf) {
+                EnableBag();
+            }
         }
+    }
+
+    private void EnableBag() {
+        MyBag.SetActive(true);
+        InventoryManager.RefreshItem();
     }
     
 }

@@ -16,4 +16,15 @@ public class MoveBag : MonoBehaviour,IDragHandler
     private void Awake() {
         myBag = GetComponent<RectTransform>();
     }
+
+    private void Update() {
+        if(Input.GetKeyDown(KeyCode.B) || Input.GetKeyDown(KeyCode.Escape)) {
+            DisableBag();
+        }
+    }
+
+    public void DisableBag() {
+        gameObject.SetActive(false);
+        InventoryManager.RefreshItem();
+    }
 }
