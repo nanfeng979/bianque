@@ -13,6 +13,10 @@ public class test : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Z)) {
             ChineseMedicineIllustratedTest();
         }
+
+        if(Input.GetKeyDown(KeyCode.Escape)) {
+            Application.Quit();
+        }
     }
 
     private void ChineseMedicineIllustratedTest() {
