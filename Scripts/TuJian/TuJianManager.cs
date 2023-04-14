@@ -25,7 +25,7 @@ public class TuJianManager : MonoBehaviour
     }
 
     void Update() {
-        if(Input.GetKeyDown(KeyCode.T) || Input.GetKeyDown(KeyCode.Escape)) {
+        if(Input.GetKeyDown((KeyCode)EShortcut.Tujian) || Input.GetKeyDown(KeyCode.Escape)) {
             DisableTujian();
         }
     }

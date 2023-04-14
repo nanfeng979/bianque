@@ -8,7 +8,7 @@ public class CanvasController : MonoBehaviour
     public GameObject tujian;
 
     void Update() {
-        if(Input.GetKeyDown(KeyCode.T)) {
+        if(Input.GetKeyDown((KeyCode)EShortcut.Tujian)) {
             EnableTujian();
         }
     }
