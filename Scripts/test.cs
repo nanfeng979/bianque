@@ -17,6 +17,13 @@ public class test : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Escape)) {
             Application.Quit();
         }
+        if(Input.GetKeyDown(KeyCode.X)) {
+            AddCaoYao("caoyao1");
+        }
+            
+        if(Input.GetKeyDown(KeyCode.C)) {
+            AddCaoYao("caoyao2");
+        }
     }
 
     private void ChineseMedicineIllustratedTest() {
@@ -35,5 +42,9 @@ public class test : MonoBehaviour
 
     public void myTest() {
         Debug.Log("test");
+    }
+    private void AddCaoYao(string name)
+    {
+        TuJianManager.findCaoyao(name);
     }
 }
