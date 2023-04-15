@@ -18,19 +18,21 @@ public class TuJianManager : MonoBehaviour
         instance = this;
     }
 
-    
-
-    private void OnEnable() {
+    private void OnEnable()
+    {
         Refreshcaoyao();//刷新背包物品格
     }
 
-    void Update() {
-        if(Input.GetKeyDown((KeyCode)EShortcut.Tujian) || Input.GetKeyDown(KeyCode.Escape)) {
+    void Update()
+    {
+        if (Input.GetKeyDown((KeyCode)EShortcut.Tujian) || Input.GetKeyDown(KeyCode.Escape))
+        {
             DisableTujian();
         }
     }
 
-    public void DisableTujian() {
+    public void DisableTujian()
+    {
         gameObject.SetActive(false);
     }
 
@@ -38,24 +40,25 @@ public class TuJianManager : MonoBehaviour
     {   //循环删除Grid下的子集物体
         for (int i = 0; i < instance.Grid.transform.childCount; i++)
         {
-            if(instance.Grid.transform.childCount == 0) break;
+            if (instance.Grid.transform.childCount == 0) break;
             Destroy(instance.Grid.transform.GetChild(i).gameObject);
             instance.caoyaos.Clear();
         }
         //重新生成对应caoyaoList里面的物品的slot
         for (int i = 0; i < instance.caoyaoList.ItemList.Count; i++)
         {
-             instance.caoyaos.Add(Instantiate(instance.emptyCaoyao));//实例化预制体slot类型的caoyaos列表
-             instance.caoyaos[i].transform.SetParent(instance.Grid.transform);
-             //将caoyaoList中的物品信息跟新到slot
-             instance.caoyaos[i].GetComponent<caoyao>().SetupCaoYao(instance.caoyaoList.ItemList[i]);
+            instance.caoyaos.Add(Instantiate(instance.emptyCaoyao));//实例化预制体slot类型的caoyaos列表
+            instance.caoyaos[i].transform.SetParent(instance.Grid.transform);
+            //将caoyaoList中的物品信息跟新到slot
+            instance.caoyaos[i].GetComponent<caoyao>().SetupCaoYao(instance.caoyaoList.ItemList[i]);
         }
     }
+
     public static void findCaoyao(string name)
     {
-        for(int i = 0;i<instance.caoyaoList.ItemList.Count;i++)
+        for (int i = 0; instance.caoyaoList.ItemList.Count != 0 && i < instance.caoyaoList.ItemList.Count; i++)
         {
-            if(instance.caoyaoList.ItemList[i].itemName == name)
+            if (instance.caoyaoList.ItemList[i].itemName == name)
             {
                 instance.caoyaoList.ItemList[i].hold = true;
                 instance.AddNewcaoyao(instance.caoyaoList.ItemList[i]);
@@ -63,13 +66,14 @@ public class TuJianManager : MonoBehaviour
         }
         Refreshcaoyao();
     }
+
     public void AddNewcaoyao(Item thisItem)//在背包中添加新的Item
     {
-        if(!myBag.ItemList.Contains(thisItem))//如果背包中没有该Item
+        if (!myBag.ItemList.Contains(thisItem))//如果背包中没有该Item
         {
-            for(int i=0;i<myBag.ItemList.Count;i++)//遍历背包
+            for (int i = 0; i < myBag.ItemList.Count; i++)//遍历背包
             {
-                if(myBag.ItemList[i] == null)//该背包格子为空则放到该位置
+                if (myBag.ItemList[i] == null)//该背包格子为空则放到该位置
                 {
                     myBag.ItemList[i] = thisItem;
                     break;
