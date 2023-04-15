@@ -14,9 +14,7 @@ public class test : MonoBehaviour
             ChineseMedicineIllustratedTest();
         }
 
-        if(Input.GetKeyDown(KeyCode.Escape)) {
-            Application.Quit();
-        }
+        
         if(Input.GetKeyDown(KeyCode.X)) {
             AddCaoYao("caoyao1");
         }

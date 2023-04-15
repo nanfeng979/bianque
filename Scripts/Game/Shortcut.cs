@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public enum EShortcut {
-    Tujian = KeyCode.U
+    Tujian = KeyCode.T
 }
 
 public class Shortcut : MonoBehaviour
