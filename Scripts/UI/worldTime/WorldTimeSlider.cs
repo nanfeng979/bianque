@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class WorldTimeSlider : MonoBehaviour
 {
+    [SerializeField] private WorldDayManager worldDayManager;
+
     private RectTransform rect;
 
     private float timeSpeed;
@@ -28,6 +30,6 @@ public class WorldTimeSlider : MonoBehaviour
     }
 
     private void addWorldDay() {
-        Debug.Log("加一天");
+        worldDayManager.addWorldDay();
     }
 }

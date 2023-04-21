@@ -2121,6 +2121,7 @@ GameObject:
   - component: {fileID: 618724121}
   - component: {fileID: 618724123}
   - component: {fileID: 618724122}
+  - component: {fileID: 618724124}
   m_Layer: 5
   m_Name: WorldDay
   m_TagString: Untagged
@@ -2187,6 +2188,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 618724120}
   m_CullTransparentMesh: 1
+--- !u!114 &618724124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 618724120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d506ef326e853d74995089ed32ff6bb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  worldDayText: {fileID: 1122211100}
 --- !u!1 &645169610
 GameObject:
   m_ObjectHideFlags: 0
@@ -29794,6 +29808,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e763a5a1d6d94ab4593ce08618f0d0ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  worldDayManager: {fileID: 618724124}
 --- !u!1 &1799454345
 GameObject:
   m_ObjectHideFlags: 0
