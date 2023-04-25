@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class WorldTimeSlider : MonoBehaviour
 {
+    [SerializeField] private GameObject timeAnim;
     [SerializeField] private WorldDayManager worldDayManager;
 
     private RectTransform rect;
@@ -23,6 +24,7 @@ public class WorldTimeSlider : MonoBehaviour
         if(top >= 00.0f) {
             top = -100.0f;
             addWorldDay();
+            EnableTimeAnim();
         }
 
         rect.offsetMax = new Vector2(rect.offsetMax.x, top);
@@ -31,5 +33,9 @@ public class WorldTimeSlider : MonoBehaviour
 
     private void addWorldDay() {
         worldDayManager.addWorldDay();
+    }
+
+    private void EnableTimeAnim() {
+        timeAnim.SetActive(true);
     }
 }
