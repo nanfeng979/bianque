@@ -13,7 +13,7 @@ public class CanvasController : MonoBehaviour
         }
     }
 
-    private void EnableTujian() {
+    public void EnableTujian() {
         tujian.SetActive(true);
     }
 

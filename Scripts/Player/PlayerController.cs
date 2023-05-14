@@ -53,7 +53,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void EnableBag() {
+    public void EnableBag() {
         MyBag.SetActive(true);
         InventoryManager.RefreshItem();
     }
