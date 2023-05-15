@@ -13,6 +13,7 @@ public class SubPuzzleManager : MonoBehaviour
     public SubPuzzle[] SubPuzzles;
 
     void OnEnable() {
+        PuzzleQuitTips.SetActive(false);
         // 选定其中一个隐藏
         SubPuzzles[BeClearIndex].IsEnable = false;
         
