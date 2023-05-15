@@ -5,25 +5,32 @@ using UnityEngine.UI;
 
 public class SubPuzzleManager : MonoBehaviour
 {
+    [SerializeField] private GameObject Puzzle;
+    [SerializeField] private GameObject PuzzleQuitTips;
+
     public int BeClearIndex;
 
     public SubPuzzle[] SubPuzzles;
 
     void OnEnable() {
-        
-    }
-
-    void Start()
-    {
         // 选定其中一个隐藏
         SubPuzzles[BeClearIndex].IsEnable = false;
         
         TestRandomPuzzle();
     }
 
+    void Start()
+    {
+        
+    }
+
     void Update()
     {
         PuzzleIsReset();
+
+        if(Input.GetKeyDown(KeyCode.Space)) {
+            Quit();
+        }
     }
 
     private void PuzzleIsReset() {
@@ -34,8 +41,10 @@ public class SubPuzzleManager : MonoBehaviour
                 count += 1;
             }
         }
+        
         if(count == SubPuzzles.Length) {
-            Debug.Log("yes");
+            Debug.Log("已增加图鉴");
+            PuzzleQuitTips.SetActive(true);
         }
     }
     
@@ -48,5 +57,9 @@ public class SubPuzzleManager : MonoBehaviour
             int j = (int)Mathf.Floor(Random.Range(0, SubPuzzles.Length));
             SubPuzzles[i].Check4Dir(SubPuzzles[j].Index);
         }
+    }
+
+    public void Quit() {
+        Puzzle.SetActive(false);
     }
 }
