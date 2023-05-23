@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: caoyao1
   m_EditorClassIdentifier: 
   itemName: caoyao1
-  itemImage: {fileID: 21300000, guid: dbc624f7b3a644dcf989e434e63d9a98, type: 3}
-  itemHeld: 3
+  itemImage: {fileID: 21300000, guid: e0f1eba4c400d0249b8d05b58d883f0a, type: 3}
+  itemHeld: 6
   itemInfo: "\u8349\u836F1"
-  hold: 0
+  hold: 1

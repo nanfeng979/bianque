@@ -12,11 +12,14 @@ public class SubPuzzleManager : MonoBehaviour
 
     public SubPuzzle[] SubPuzzles;
 
+    private bool flag;
+
     void OnEnable() {
+        flag = false;
         PuzzleQuitTips.SetActive(false);
         // 选定其中一个隐藏
         SubPuzzles[BeClearIndex].IsEnable = false;
-        
+
         TestRandomPuzzle();
     }
 
@@ -44,8 +47,11 @@ public class SubPuzzleManager : MonoBehaviour
         }
         
         if(count == SubPuzzles.Length) {
-            Debug.Log("已增加图鉴");
-            PuzzleQuitTips.SetActive(true);
+            if(!flag) {
+                TuJianManager.findCaoyao("caoyao1");
+                PuzzleQuitTips.SetActive(true);
+                flag = true;
+            }
         }
     }
     

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: sword
   m_EditorClassIdentifier: 
   itemName: swprd
-  itemImage: {fileID: 21300000, guid: 03dd1ef6fb163214c9e1ac0242dab3ba, type: 3}
+  itemImage: {fileID: 21300000, guid: e9e819e249505384882d044020dde51c, type: 3}
   itemHeld: 1
   itemInfo: "\u4E00\u628A\u5251"
+  hold: 0
