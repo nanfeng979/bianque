@@ -7,6 +7,6 @@ public class play : MonoBehaviour
 {
     public void ChangeScene()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("guochang");
     }
 }
