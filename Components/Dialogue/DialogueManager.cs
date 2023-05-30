@@ -42,6 +42,6 @@ public class DialogueManager : MonoBehaviour
     }
 
     private void nextScene() {
-        SceneManager.LoadScene("Playing");
+        loadManager.instance.LoadPlaying();
     }
 }
