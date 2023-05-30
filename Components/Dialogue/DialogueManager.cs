@@ -37,19 +37,17 @@ public class DialogueManager : MonoBehaviour
     }
 
     private void updateImage(int index) {
+        Lihui.gameObject.SetActive(false);
         if(database.Dialogue[index].characterImage != null) {
             if(database.Dialogue[index].characterImagePosition != null) {
-                
                 if(database.Dialogue[index].characterImagePosition == "Left") {
-
+                    
                 } else if(database.Dialogue[index].characterImagePosition == "Right") {
                     Lihui.GetComponent<Image>().sprite = database.Dialogue[index].characterImage;
                     Lihui.transform.position = RightPosition.position;
-
+                    Lihui.transform.localScale = new Vector3(7, 7, 1);
+                    Lihui.gameObject.SetActive(true);
                 }
-
-                Lihui.transform.localScale = new Vector3(7, 7, 1);
-                Lihui.gameObject.SetActive(true);
             }
         }
     }
