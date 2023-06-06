@@ -15,5 +15,5 @@ MonoBehaviour:
   itemName: caoyao1
   itemImage: {fileID: 21300000, guid: e0f1eba4c400d0249b8d05b58d883f0a, type: 3}
   itemHeld: 6
-  itemInfo: "\u8349\u836F1"
-  hold: 1
+  itemInfo: "\u85FF\u9999\r"
+  hold: 0

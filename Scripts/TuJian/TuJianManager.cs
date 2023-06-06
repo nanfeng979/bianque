@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class TuJianManager : MonoBehaviour
 {
-    static TuJianManager instance;
+    public static TuJianManager instance;
     public GameObject Grid;//存放caoyao预制体的父级
     public GameObject emptyCaoyao;//预制体
     public Inventory caoyaoList;
@@ -23,18 +23,13 @@ public class TuJianManager : MonoBehaviour
         Refreshcaoyao();//刷新背包物品格
     }
 
-    void Update()
-    {
-        if (Input.GetKeyDown((KeyCode)EShortcut.Tujian) || Input.GetKeyDown(KeyCode.Escape))
-        {
-            DisableTujian();
-        }
-    }
-
-    public void DisableTujian()
-    {
-        gameObject.SetActive(false);
-    }
+    // void Update()
+    // {
+    //     if (Input.GetKeyDown((KeyCode)EShortcut.Tujian) || Input.GetKeyDown(KeyCode.Escape))
+    //     {
+    //         DisableTujian();
+    //     }
+    // }
 
     public static void Refreshcaoyao()//刷新背包物品格
     {   //循环删除Grid下的子集物体
@@ -58,7 +53,7 @@ public class TuJianManager : MonoBehaviour
     {
         for (int i = 0; instance.caoyaoList.ItemList.Count != 0 && i < instance.caoyaoList.ItemList.Count; i++)
         {
-            if (instance.caoyaoList.ItemList[i].itemName == name)
+            if (instance.caoyaoList.ItemList[i].itemName == name && !instance.caoyaoList.ItemList[i].hold)
             {
                 instance.caoyaoList.ItemList[i].hold = true;
                 instance.AddNewcaoyao(instance.caoyaoList.ItemList[i]);

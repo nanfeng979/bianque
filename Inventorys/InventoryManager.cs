@@ -35,9 +35,14 @@ public class InventoryManager : MonoBehaviour
         }
         //重新生成对应myBag里面的物品的slot
         for (int i = 0; i < instance.myBag.ItemList.Count; i++)
-        {
+        {    
+            
              instance.slots.Add(Instantiate(instance.emptySlot));//实例化预制体slot类型的slots列表
              instance.slots[i].transform.SetParent(instance.slotGrid.transform);
+             if(instance.myBag.ItemList[i] != null && instance.myBag.ItemList[i].itemHeld <= 0) 
+             {
+                instance.myBag.ItemList[i] = null;
+             } 
              //将myBag中的物品信息跟新到slot
              instance.slots[i].GetComponent<Slot>().SetupSlot(instance.myBag.ItemList[i]);
              instance.slots[i].GetComponent<Slot>().slotID = i;

@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: swprd
   itemImage: {fileID: 21300000, guid: e9e819e249505384882d044020dde51c, type: 3}
-  itemHeld: 1
-  itemInfo: "\u4E00\u628A\u5251"
+  itemHeld: 0
+  itemInfo: "\u4E94\u5473\u5B50"
   hold: 0

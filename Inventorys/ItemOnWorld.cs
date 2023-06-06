@@ -34,6 +34,7 @@ public class ItemOnWorld : MonoBehaviour
         TuJianManager.findCaoyao(thisItem.itemName);
         if (!myBag.ItemList.Contains(thisItem))//如果背包中没有该Item
         {
+            thisItem.itemHeld += 1;
             for (int i = 0; i < myBag.ItemList.Count; i++)//遍历背包
             {
                 if (myBag.ItemList[i] == null)//该背包格子为空则放到该位置
