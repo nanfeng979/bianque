@@ -7,6 +7,10 @@ public class ItemOnWorld : MonoBehaviour
     public Item thisItem;//该物体的Item属性
     public Inventory myBag;//存放的背包
     private bool kaiguan;//判断是否可以拾取
+
+
+     [SerializeField] private GameObject Puzzle;
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "Player")
@@ -25,8 +29,10 @@ public class ItemOnWorld : MonoBehaviour
     {
         if (Input.GetKeyDown((KeyCode)EShortcut.Pickup) && kaiguan)
         {
-            AddNewItem();//在背包中添加新的Item
-            Destroy(gameObject);
+
+            Puzzle.SetActive(true);
+            // AddNewItem();//在背包中添加新的Item
+            // Destroy(gameObject);
         }
     }
     public void AddNewItem()//在背包中添加新的Item

@@ -16,4 +16,4 @@ MonoBehaviour:
   itemImage: {fileID: 21300000, guid: a5b1f093948c21845a508aa8f7fcd6e4, type: 3}
   itemHeld: 0
   itemInfo: "\u8FCE\u6625\u82B1"
-  hold: 1
+  hold: 0
