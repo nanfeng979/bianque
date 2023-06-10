@@ -21,6 +21,7 @@ public class SubPuzzleManager : MonoBehaviour
         SubPuzzles[BeClearIndex].IsEnable = false;
 
         TestRandomPuzzle();
+        // RandomPuzzle(4);
     }
 
     void Start()
@@ -56,11 +57,25 @@ public class SubPuzzleManager : MonoBehaviour
     }
     
     private void TestRandomPuzzle() {
-        SubPuzzles[7].Check4Dir(SubPuzzles[7].Index);
+        List<int> list = new List<int>();
+        list.Add(7);
+        list.Add(4);
+        list.Add(3);
+        list.Add(0);
+        for(int i = 0; i < list.Count; i++) {
+            SubPuzzles[list[i]].Check4Dir(SubPuzzles[list[i]].Index);
+        }
     }
 
     private void RandomPuzzle() {
         for (int i = 0; i < SubPuzzles.Length; i++) {
+            int j = (int)Mathf.Floor(Random.Range(0, SubPuzzles.Length));
+            SubPuzzles[i].Check4Dir(SubPuzzles[j].Index);
+        }
+    }
+
+    private void RandomPuzzle(int count) {
+        for (int i = 0; i < count; i++) {
             int j = (int)Mathf.Floor(Random.Range(0, SubPuzzles.Length));
             SubPuzzles[i].Check4Dir(SubPuzzles[j].Index);
         }
