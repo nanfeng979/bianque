@@ -1920,6 +1920,7 @@ MonoBehaviour:
   - {fileID: 30870006}
   - {fileID: 1272348427}
   - {fileID: 1242800596}
+  index: 1
 --- !u!114 &149671433
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2767,6 +2768,7 @@ MonoBehaviour:
   - {fileID: 2104818364}
   - {fileID: 1100376468}
   - {fileID: 121025850}
+  index: 2
 --- !u!114 &230229713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34133,6 +34135,7 @@ MonoBehaviour:
   - {fileID: 2125789990}
   - {fileID: 954915792}
   - {fileID: 1104097102}
+  index: 3
 --- !u!114 &1147244394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34619,6 +34622,7 @@ MonoBehaviour:
   - {fileID: 341846141}
   - {fileID: 1368152570}
   - {fileID: 567839809}
+  index: 1
 --- !u!114 &1228975502
 MonoBehaviour:
   m_ObjectHideFlags: 0

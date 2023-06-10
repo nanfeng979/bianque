@@ -12,6 +12,8 @@ public class SubPuzzleManager : MonoBehaviour
 
     public SubPuzzle[] SubPuzzles;
 
+    public int index = 1;
+
     private bool flag;
 
     void OnEnable() {
@@ -20,8 +22,7 @@ public class SubPuzzleManager : MonoBehaviour
         // 选定其中一个隐藏
         SubPuzzles[BeClearIndex].IsEnable = false;
 
-        TestRandomPuzzle();
-        // RandomPuzzle(4);
+        TestRandomPuzzle(index);
     }
 
     void Start()
@@ -56,13 +57,19 @@ public class SubPuzzleManager : MonoBehaviour
         }
     }
     
-    private void TestRandomPuzzle() {
-        List<int> list = new List<int>();
-        list.Add(7);
-        list.Add(4);
-        list.Add(3);
-        list.Add(0);
-        for(int i = 0; i < list.Count; i++) {
+    private void TestRandomPuzzle(int index) {
+        int[] list = new int[4];
+
+        if(index == 1) {
+            list = new int[4] {7, 4, 3, 0};
+        } else if(index == 2) {
+            list = new int[4] {7, 6, 3, 0};
+        } else if(index == 3) {
+            list = new int[4] {7, 4, 1, 0};
+        }
+
+
+        for(int i = 0; i < list.Length; i++) {
             SubPuzzles[list[i]].Check4Dir(SubPuzzles[list[i]].Index);
         }
     }
