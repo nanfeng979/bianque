@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8255e03390a6a0349b2154f6a9feae71
+guid: 1417027a3f83245469daaebef0fd2c7c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,12 +43,12 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 0
-  spriteMeshType: 0
+  spriteExtrude: 1
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 210, y: 210, z: 210, w: 210}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -102,7 +102,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: WebGL
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -114,7 +114,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: Android
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -129,7 +129,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 630flower_0
+      name: hua1630_0
       rect:
         serializedVersion: 2
         x: 0
@@ -143,14 +143,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb2d6385181a23f499844d3fe6f77522
-      internalID: 979706900
+      spriteID: 66e991b058d27a445bcc23250089fac3
+      internalID: 1414488274
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 630flower_1
+      name: hua1630_1
       rect:
         serializedVersion: 2
         x: 210
@@ -164,14 +164,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8296d93c3725d1640a8cf3bfd9070f61
-      internalID: -576624754
+      spriteID: 77d5552e98fc04547a892c33a2ca1db8
+      internalID: -2092495309
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 630flower_2
+      name: hua1630_2
       rect:
         serializedVersion: 2
         x: 420
@@ -185,14 +185,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a89c1caf396e9054ea6ac06934185c2b
-      internalID: -1124748268
+      spriteID: 13b8113be4af519428a0902367e86042
+      internalID: -494871065
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 630flower_3
+      name: hua1630_3
       rect:
         serializedVersion: 2
         x: 0
@@ -206,14 +206,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4b2674b690d2d14d9c92c65605aba31
-      internalID: 65286810
+      spriteID: 3e1b1b2696871e34d8ed50229ab1e36d
+      internalID: -580525706
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 630flower_4
+      name: hua1630_4
       rect:
         serializedVersion: 2
         x: 210
@@ -227,14 +227,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c27e2a1307f8a7458ac90c632af7d94
-      internalID: 1335959294
+      spriteID: 8f04db46104e829418af77aab4fdd87f
+      internalID: 1045393855
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 630flower_5
+      name: hua1630_5
       rect:
         serializedVersion: 2
         x: 420
@@ -248,14 +248,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb50bb6881685c340b24c342a62121c2
-      internalID: -1396917895
+      spriteID: 4ec0b0a2396bf9f45b7be034c98cd5a4
+      internalID: 482674698
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 630flower_6
+      name: hua1630_6
       rect:
         serializedVersion: 2
         x: 0
@@ -269,14 +269,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1379f756c7a683140b00a1c9675a7fdf
-      internalID: 483093615
+      spriteID: 419c311f3f7ca794c8444ec500c7c9ab
+      internalID: -1694587045
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 630flower_7
+      name: hua1630_7
       rect:
         serializedVersion: 2
         x: 210
@@ -290,14 +290,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa5fe9654d4422540bb721d4cfd4180a
-      internalID: -71471293
+      spriteID: e1e61a633f4855b43b63fa8e7120c159
+      internalID: 1170575821
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 630flower_8
+      name: hua1630_8
       rect:
         serializedVersion: 2
         x: 420
@@ -311,8 +311,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2b8bebcbc048e448a6040bccc901253
-      internalID: -2067749621
+      spriteID: 9dbfedba4bd5e0845b98a84cdbd97e3e
+      internalID: -365550059
       vertices: []
       indices: 
       edges: []
@@ -321,22 +321,22 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 1537655665
+    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      630flower_5: -1396917895
-      630flower_4: 1335959294
-      630flower_3: 65286810
-      630flower_8: -2067749621
-      630flower_2: -1124748268
-      630flower_7: -71471293
-      630flower_6: 483093615
-      630flower_1: -576624754
-      630flower_0: 979706900
+      hua1630_0: 1414488274
+      hua1630_5: 482674698
+      hua1630_6: -1694587045
+      hua1630_8: -365550059
+      hua1630_3: -580525706
+      hua1630_7: 1170575821
+      hua1630_1: -2092495309
+      hua1630_2: -494871065
+      hua1630_4: 1045393855
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

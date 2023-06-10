@@ -1728,7 +1728,7 @@ PrefabInstance:
     - target: {fileID: 3476580736503517094, guid: b089242483cb8b04b97c79c9363e4d46, type: 3}
       propertyPath: sprite
       value: 
-      objectReference: {fileID: -2067749621, guid: 8255e03390a6a0349b2154f6a9feae71, type: 3}
+      objectReference: {fileID: -365550059, guid: 1417027a3f83245469daaebef0fd2c7c, type: 3}
     - target: {fileID: 3476580736503517094, guid: b089242483cb8b04b97c79c9363e4d46, type: 3}
       propertyPath: subPuzzleManager
       value: 
@@ -2072,7 +2072,7 @@ PrefabInstance:
     - target: {fileID: 3476580736503517094, guid: b089242483cb8b04b97c79c9363e4d46, type: 3}
       propertyPath: sprite
       value: 
-      objectReference: {fileID: -1124748268, guid: 8255e03390a6a0349b2154f6a9feae71, type: 3}
+      objectReference: {fileID: -494871065, guid: 1417027a3f83245469daaebef0fd2c7c, type: 3}
     - target: {fileID: 3476580736503517094, guid: b089242483cb8b04b97c79c9363e4d46, type: 3}
       propertyPath: subPuzzleManager
       value: 
@@ -2989,6 +2989,8 @@ GameObject:
   m_Component:
   - component: {fileID: 262296441}
   - component: {fileID: 262296442}
+  - component: {fileID: 262296444}
+  - component: {fileID: 262296443}
   m_Layer: 0
   m_Name: star3
   m_TagString: Untagged
@@ -3004,7 +3006,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 262296440}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.887, y: 1.49, z: 0}
+  m_LocalPosition: {x: 2.253, y: 0.353, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3063,6 +3065,45 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &262296443
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 262296440}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.31628895}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.190625, y: 0.173125}
+    newSize: {x: 6.1, y: 5.54}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.190625, y: 0.25523758}
+  m_EdgeRadius: 0
+--- !u!114 &262296444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 262296440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0e13aedd5ee93040880c9ba5ccca5cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puzzle: {fileID: 205084226}
 --- !u!1001 &277844410
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3147,7 +3188,7 @@ PrefabInstance:
     - target: {fileID: 3476580736503517094, guid: b089242483cb8b04b97c79c9363e4d46, type: 3}
       propertyPath: sprite
       value: 
-      objectReference: {fileID: -1396917895, guid: 8255e03390a6a0349b2154f6a9feae71, type: 3}
+      objectReference: {fileID: 482674698, guid: 1417027a3f83245469daaebef0fd2c7c, type: 3}
     - target: {fileID: 3476580736503517094, guid: b089242483cb8b04b97c79c9363e4d46, type: 3}
       propertyPath: subPuzzleManager
       value: 
@@ -3276,7 +3317,7 @@ PrefabInstance:
     - target: {fileID: 3476580736503517094, guid: b089242483cb8b04b97c79c9363e4d46, type: 3}
       propertyPath: sprite
       value: 
-      objectReference: {fileID: -576624754, guid: 8255e03390a6a0349b2154f6a9feae71, type: 3}
+      objectReference: {fileID: -2092495309, guid: 1417027a3f83245469daaebef0fd2c7c, type: 3}
     - target: {fileID: 3476580736503517094, guid: b089242483cb8b04b97c79c9363e4d46, type: 3}
       propertyPath: subPuzzleManager
       value: 
@@ -5151,7 +5192,7 @@ PrefabInstance:
     - target: {fileID: 3476580736503517094, guid: b089242483cb8b04b97c79c9363e4d46, type: 3}
       propertyPath: sprite
       value: 
-      objectReference: {fileID: 1335959294, guid: 8255e03390a6a0349b2154f6a9feae71, type: 3}
+      objectReference: {fileID: 1045393855, guid: 1417027a3f83245469daaebef0fd2c7c, type: 3}
     - target: {fileID: 3476580736503517094, guid: b089242483cb8b04b97c79c9363e4d46, type: 3}
       propertyPath: subPuzzleManager
       value: 
@@ -7458,7 +7499,7 @@ PrefabInstance:
     - target: {fileID: 3476580736503517094, guid: b089242483cb8b04b97c79c9363e4d46, type: 3}
       propertyPath: sprite
       value: 
-      objectReference: {fileID: 65286810, guid: 8255e03390a6a0349b2154f6a9feae71, type: 3}
+      objectReference: {fileID: -772383963, guid: 49db178d19a242c41a1e774c1d5a2a8f, type: 3}
     - target: {fileID: 3476580736503517094, guid: b089242483cb8b04b97c79c9363e4d46, type: 3}
       propertyPath: subPuzzleManager
       value: 
@@ -32229,7 +32270,7 @@ PrefabInstance:
     - target: {fileID: 3476580736503517094, guid: b089242483cb8b04b97c79c9363e4d46, type: 3}
       propertyPath: sprite
       value: 
-      objectReference: {fileID: -71471293, guid: 8255e03390a6a0349b2154f6a9feae71, type: 3}
+      objectReference: {fileID: -1522767373, guid: 49db178d19a242c41a1e774c1d5a2a8f, type: 3}
     - target: {fileID: 3476580736503517094, guid: b089242483cb8b04b97c79c9363e4d46, type: 3}
       propertyPath: subPuzzleManager
       value: 
@@ -32742,7 +32783,7 @@ PrefabInstance:
     - target: {fileID: 3476580736503517094, guid: b089242483cb8b04b97c79c9363e4d46, type: 3}
       propertyPath: sprite
       value: 
-      objectReference: {fileID: 979706900, guid: 8255e03390a6a0349b2154f6a9feae71, type: 3}
+      objectReference: {fileID: 1820305491, guid: 49db178d19a242c41a1e774c1d5a2a8f, type: 3}
     - target: {fileID: 3476580736503517094, guid: b089242483cb8b04b97c79c9363e4d46, type: 3}
       propertyPath: subPuzzleManager
       value: 
@@ -32867,7 +32908,7 @@ PrefabInstance:
     - target: {fileID: 3476580736503517094, guid: b089242483cb8b04b97c79c9363e4d46, type: 3}
       propertyPath: sprite
       value: 
-      objectReference: {fileID: -576624754, guid: 8255e03390a6a0349b2154f6a9feae71, type: 3}
+      objectReference: {fileID: 1231890003, guid: 49db178d19a242c41a1e774c1d5a2a8f, type: 3}
     - target: {fileID: 3476580736503517094, guid: b089242483cb8b04b97c79c9363e4d46, type: 3}
       propertyPath: subPuzzleManager
       value: 
@@ -33499,7 +33540,7 @@ PrefabInstance:
     - target: {fileID: 3476580736503517094, guid: b089242483cb8b04b97c79c9363e4d46, type: 3}
       propertyPath: sprite
       value: 
-      objectReference: {fileID: -71471293, guid: 8255e03390a6a0349b2154f6a9feae71, type: 3}
+      objectReference: {fileID: 1170575821, guid: 1417027a3f83245469daaebef0fd2c7c, type: 3}
     - target: {fileID: 3476580736503517094, guid: b089242483cb8b04b97c79c9363e4d46, type: 3}
       propertyPath: subPuzzleManager
       value: 
@@ -33628,7 +33669,7 @@ PrefabInstance:
     - target: {fileID: 3476580736503517094, guid: b089242483cb8b04b97c79c9363e4d46, type: 3}
       propertyPath: sprite
       value: 
-      objectReference: {fileID: -2067749621, guid: 8255e03390a6a0349b2154f6a9feae71, type: 3}
+      objectReference: {fileID: 91089157, guid: 49db178d19a242c41a1e774c1d5a2a8f, type: 3}
     - target: {fileID: 3476580736503517094, guid: b089242483cb8b04b97c79c9363e4d46, type: 3}
       propertyPath: subPuzzleManager
       value: 
@@ -36002,7 +36043,7 @@ PrefabInstance:
     - target: {fileID: 3476580736503517094, guid: b089242483cb8b04b97c79c9363e4d46, type: 3}
       propertyPath: sprite
       value: 
-      objectReference: {fileID: 65286810, guid: 8255e03390a6a0349b2154f6a9feae71, type: 3}
+      objectReference: {fileID: -580525706, guid: 1417027a3f83245469daaebef0fd2c7c, type: 3}
     - target: {fileID: 3476580736503517094, guid: b089242483cb8b04b97c79c9363e4d46, type: 3}
       propertyPath: subPuzzleManager
       value: 
@@ -37018,7 +37059,7 @@ PrefabInstance:
     - target: {fileID: 3476580736503517094, guid: b089242483cb8b04b97c79c9363e4d46, type: 3}
       propertyPath: sprite
       value: 
-      objectReference: {fileID: 979706900, guid: 8255e03390a6a0349b2154f6a9feae71, type: 3}
+      objectReference: {fileID: 1414488274, guid: 1417027a3f83245469daaebef0fd2c7c, type: 3}
     - target: {fileID: 3476580736503517094, guid: b089242483cb8b04b97c79c9363e4d46, type: 3}
       propertyPath: subPuzzleManager
       value: 
@@ -37463,7 +37504,7 @@ PrefabInstance:
     - target: {fileID: 3476580736503517094, guid: b089242483cb8b04b97c79c9363e4d46, type: 3}
       propertyPath: sprite
       value: 
-      objectReference: {fileID: 1335959294, guid: 8255e03390a6a0349b2154f6a9feae71, type: 3}
+      objectReference: {fileID: -1945987558, guid: 49db178d19a242c41a1e774c1d5a2a8f, type: 3}
     - target: {fileID: 3476580736503517094, guid: b089242483cb8b04b97c79c9363e4d46, type: 3}
       propertyPath: subPuzzleManager
       value: 
@@ -37988,7 +38029,7 @@ PrefabInstance:
     - target: {fileID: 3476580736503517094, guid: b089242483cb8b04b97c79c9363e4d46, type: 3}
       propertyPath: sprite
       value: 
-      objectReference: {fileID: -1396917895, guid: 8255e03390a6a0349b2154f6a9feae71, type: 3}
+      objectReference: {fileID: 1148975405, guid: 49db178d19a242c41a1e774c1d5a2a8f, type: 3}
     - target: {fileID: 3476580736503517094, guid: b089242483cb8b04b97c79c9363e4d46, type: 3}
       propertyPath: subPuzzleManager
       value: 
@@ -38113,6 +38154,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1725248362}
   - component: {fileID: 1725248363}
+  - component: {fileID: 1725248364}
+  - component: {fileID: 1725248365}
   m_Layer: 0
   m_Name: star2
   m_TagString: Untagged
@@ -38128,7 +38171,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1725248361}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.503, y: 1.777, z: 0}
+  m_LocalPosition: {x: 2.285, y: 1.641, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -38187,6 +38230,45 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1725248364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725248361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0e13aedd5ee93040880c9ba5ccca5cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puzzle: {fileID: 832730658}
+--- !u!61 &1725248365
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725248361}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.31628895}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.190625, y: 0.173125}
+    newSize: {x: 6.1, y: 5.54}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.190625, y: 0.25523758}
+  m_EdgeRadius: 0
 --- !u!1001 &1747509067
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38580,7 +38662,7 @@ PrefabInstance:
     - target: {fileID: 3476580736503517094, guid: b089242483cb8b04b97c79c9363e4d46, type: 3}
       propertyPath: sprite
       value: 
-      objectReference: {fileID: -1124748268, guid: 8255e03390a6a0349b2154f6a9feae71, type: 3}
+      objectReference: {fileID: -2125118598, guid: 49db178d19a242c41a1e774c1d5a2a8f, type: 3}
     - target: {fileID: 3476580736503517094, guid: b089242483cb8b04b97c79c9363e4d46, type: 3}
       propertyPath: subPuzzleManager
       value: 
@@ -41247,7 +41329,7 @@ PrefabInstance:
     - target: {fileID: 3476580736503517094, guid: b089242483cb8b04b97c79c9363e4d46, type: 3}
       propertyPath: sprite
       value: 
-      objectReference: {fileID: 483093615, guid: 8255e03390a6a0349b2154f6a9feae71, type: 3}
+      objectReference: {fileID: -1694587045, guid: 1417027a3f83245469daaebef0fd2c7c, type: 3}
     - target: {fileID: 3476580736503517094, guid: b089242483cb8b04b97c79c9363e4d46, type: 3}
       propertyPath: subPuzzleManager
       value: 
@@ -41505,7 +41587,7 @@ PrefabInstance:
     - target: {fileID: 3476580736503517094, guid: b089242483cb8b04b97c79c9363e4d46, type: 3}
       propertyPath: sprite
       value: 
-      objectReference: {fileID: 483093615, guid: 8255e03390a6a0349b2154f6a9feae71, type: 3}
+      objectReference: {fileID: 154421041, guid: 49db178d19a242c41a1e774c1d5a2a8f, type: 3}
     - target: {fileID: 3476580736503517094, guid: b089242483cb8b04b97c79c9363e4d46, type: 3}
       propertyPath: subPuzzleManager
       value: 
