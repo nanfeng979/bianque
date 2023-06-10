@@ -13,6 +13,7 @@ public class SubPuzzleManager : MonoBehaviour
     public SubPuzzle[] SubPuzzles;
 
     public int index = 1;
+    public GameObject star;
 
     private bool flag;
 
@@ -50,6 +51,8 @@ public class SubPuzzleManager : MonoBehaviour
         
         if(count == SubPuzzles.Length) {
             if(!flag) {
+                Destroy(star);
+
                 TuJianManager.findCaoyao("caoyao1");
                 PuzzleQuitTips.SetActive(true);
                 flag = true;
